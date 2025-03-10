@@ -8,8 +8,10 @@ Our dataset was meticulously curated from publicly accessible YouTube videos fea
 
 Step 1:
 Video Selection: We identified and selected videos showcasing individuals from various ethnicities and cultures to ensure a comprehensive representation of global diversity.
+
 Step 2:
 Timestamping and Clip Extraction: Specific segments within these videos were marked based on their relevance, and frames were sampled from these segments for further analysis.
+
 Step 3
 Annotation: A total of 1,500 instances were annotated, with each unique face marked with bounding boxes and assigned an identifier (ID). 
 
