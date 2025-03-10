@@ -1,6 +1,7 @@
 # Bridging Detection and Re-identification
 
 ## Abstract
+(to be updated soon)
 
 ## Introduction of Dataset
 Our dataset was meticulously curated from publicly accessible YouTube videos featuring individual faces from diverse backgrounds worldwide, and currently comprises 100 sets of videos, primarily containing at least one individual, though some feature multiple individuals; half are categorized for indoor ambient, and the other half for outdoor environments. The generation process involved several key steps:
