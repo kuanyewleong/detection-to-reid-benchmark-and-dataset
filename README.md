@@ -1,8 +1,8 @@
 # Bridging Detection and Re-identification
 
-Abstract
+## Abstract
 
-Introduction of Dataset
+## Introduction of Dataset
 Our dataset was meticulously curated from publicly accessible YouTube videos featuring individual faces from diverse backgrounds worldwide, and currently comprises 100 sets of videos, primarily containing at least one individual, though some feature multiple individuals; half are categorized for indoor ambient, and the other half for outdoor environments. The generation process involved several key steps:
 •	Video Selection: We identified and selected videos showcasing individuals from various ethnicities and cultures to ensure a comprehensive representation of global diversity.
 •	Timestamping and Clip Extraction: Specific segments within these videos were marked based on their relevance, and frames were sampled from these segments for further analysis.
@@ -12,4 +12,4 @@ Attribute-Preserving Anonymization: Utilizing latent code optimization, we alter
 Compliance with Ethical Standards: Our anonymization approach aligns with established privacy protection methods, including de-identification and pseudonymization, to mitigate the risk of re-identification.
 
 
-Technical Documentation of Dataset
+## Technical Documentation of Dataset
