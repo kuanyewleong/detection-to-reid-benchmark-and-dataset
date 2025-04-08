@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bridging Detection and Re-identification</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 40px;
+            line-height: 1.6;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            background: #fff;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            border-radius: 8px;
+        }
+        h1, h2 {
+            color: #222;
+        }
+        .author-info {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .author-info a {
+            color: #0056b3;
+            text-decoration: none;
+        }
+        .figure {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .figure img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 4px;
+        }
+        .figure-caption {
+            font-size: 0.9em;
+            color: #555;
+        }
+        blockquote {
+            background: #eee;
+            padding: 10px 20px;
+            border-left: 4px solid #0056b3;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Bridging Detection and Re-identification: Evaluating Trustworthiness and Error Propagation in Face Recognition Pipelines</h1>
+        <div class="author-info">
+            <p>
+                <strong>Kuan Yew Leong and Jaeseung Han</strong><br>
+                A.I. System Research Co. Ltd.<br>
+                Kyoto, 606-8302 Japan<br>
+                {kyleong, han}@aisystemresearch.com<br>
+                <strong>Corresponding author:</strong> <a href="mailto:kuanyew.leong@gmail.com">kuanyew.leong@gmail.com</a>
+            </p>
+        </div>
+
+        <h2>Abstract</h2>
+        <p>
+            Face recognition systems typically rely on a two-stage pipeline – face detection and re-identification (ReID) – yet existing evaluations often overlook how detection errors propagate to affect recognition accuracy. This work empirically analyzes the interplay between detection and ReID, proposing a holistic framework to quantify synergy and error propagation. Grounded in information entropy, we introduce the Detection-Recognition Synergy (DRS) Score, a composite metric integrating Mutual Information (MI), Jensen-Shannon Divergence (JSD), and Wasserstein Distance (WD) to assess detection’s impact on recognition. We construct a novel benchmark dataset, annotated for both detection and ReID, featuring temporal sequences of the same individuals, diverse backgrounds, and natural settings across both indoor and outdoor environments. Experiments with diverse detection models, including YOLOX, Faster R-CNN, SSD, MTCNN and several others reveal substantial performance shifts due to detection variations. Our findings advocate for integrated evaluation strategies to enhance trustworthiness in face recognition pipelines. By bridging detection and ReID assessments, this study sets a foundation for more robust, explainable, and trusted face recognition pipelines.
+        </p>
+
+        <div class="figure">
+            <img src="page_media/figure1.png" alt="Face detection example">
+            <div class="figure-caption">
+                <strong>Figure 1:</strong> A face was identified and localized from the same image frame by several different detection models. From left: ATSS-r50-fpn, FCOS-MobileNetV2, SSD-MobileNetV2, YOLOX-L, YOLOX-tiny. As shown in the figure, each model positioned its bounding box slightly differently, highlighting variations in detection. These discrepancies can ultimately affect ReID performance, as demonstrated in our experiments. The face is anonymized using attribute-preserving technique due to ethical concerns.
+            </div>
+        </div>
+    </div>
+</body>
+</html>
