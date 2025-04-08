@@ -1,94 +1,163 @@
 <!DOCTYPE html>
-<html lang=\"en\">
+<html lang="en">
 <head>
-    <meta charset=\"UTF-8\">
-    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">
-    <title>Bridging Detection and Re-identification</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bridging Detection and Re-identification Research</title>
     <style>
+        :root {
+            --primary-color: #0066cc;
+            --secondary-color: #f8f9fa;
+            --dark-color: #212529;
+            --light-color: #ffffff;
+        }
+        
         body {
-            font-family: Arial, sans-serif;
-            margin: 40px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             line-height: 1.6;
-            background-color: #f9f9f9;
-            color: #333;
-        }
-        .container {
-            max-width: 800px;
-            margin: auto;
-            background: #fff;
+            color: var(--dark-color);
+            max-width: 1200px;
+            margin: 0 auto;
             padding: 20px;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            background-color: var(--light-color);
+        }
+        
+        header {
+            text-align: center;
+            padding: 2rem 0;
+            background-color: var(--secondary-color);
             border-radius: 8px;
+            margin-bottom: 2rem;
         }
-        h1, h2 {
-            color: #222;
+        
+        h1 {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+            color: var(--primary-color);
         }
-        .author-info {
-            text-align: center;
-            margin-bottom: 20px;
+        
+        h2 {
+            font-size: 1.5rem;
+            color: var(--primary-color);
+            margin-top: 2rem;
+            margin-bottom: 1rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 1px solid #dee2e6;
         }
-        .author-info a {
-            color: #0056b3;
-            text-decoration: none;
+        
+        .authors {
+            margin: 1.5rem 0;
+            font-size: 1.1rem;
         }
+        
+        .affiliation {
+            font-style: italic;
+            margin-bottom: 0.5rem;
+        }
+        
+        .contact {
+            margin-top: 1rem;
+        }
+        
+        .abstract {
+            background-color: var(--secondary-color);
+            padding: 1.5rem;
+            border-radius: 8px;
+            margin: 2rem 0;
+            text-align: justify;
+        }
+        
         .figure {
+            margin: 2rem 0;
             text-align: center;
-            margin-top: 20px;
         }
+        
         .figure img {
             max-width: 100%;
-            height: auto;
-            border-radius: 4px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
         }
+        
         .figure-caption {
-            font-size: 0.9em;
-            color: #555;
+            font-style: italic;
+            margin-top: 1rem;
+            padding: 0.5rem 1rem;
+            border-left: 4px solid var(--primary-color);
+            background-color: var(--secondary-color);
+            border-radius: 0 8px 8px 0;
+            text-align: left;
         }
-        blockquote {
-            background: #eee;
-            padding: 10px 20px;
-            border-left: 4px solid #0056b3;
-            border-radius: 4px;
-        }
-        .github-link {
+        
+        footer {
+            margin-top: 3rem;
             text-align: center;
-            margin-top: 20px;
+            padding: 1rem;
+            background-color: var(--secondary-color);
+            border-radius: 8px;
+            font-size: 0.9rem;
         }
-        .github-link a {
-            color: #0056b3;
-            font-weight: bold;
+        
+        a {
+            color: var(--primary-color);
             text-decoration: none;
+        }
+        
+        a:hover {
+            text-decoration: underline;
+        }
+        
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 1.7rem;
+            }
+            
+            body {
+                padding: 15px;
+            }
         }
     </style>
 </head>
 <body>
-    <div class=\"container\">
+    <header>
         <h1>Bridging Detection and Re-identification: Evaluating Trustworthiness and Error Propagation in Face Recognition Pipelines</h1>
-        <div class=\"author-info\">
-            <p>
-                <strong>Kuan Yew Leong and Jaeseung Han</strong><br>
-                A.I. System Research Co. Ltd.<br>
-                Kyoto, 606-8302 Japan<br>
-                {kyleong, han}@aisystemresearch.com<br>
-                <strong>Corresponding author:</strong> <a href=\"mailto:kuanyew.leong@gmail.com\">kuanyew.leong@gmail.com</a>
-            </p>
+        
+        <div class="authors">
+            <strong>Kuan Yew Leong and Jaeseung Han</strong>
         </div>
-
-        <h2>Abstract</h2>
-        <p>
-            Face recognition systems typically rely on a two-stage pipeline – face detection and re-identification (ReID) – yet existing evaluations often overlook how detection errors propagate to affect recognition accuracy. This work empirically analyzes the interplay between detection and ReID, proposing a holistic framework to quantify synergy and error propagation. Grounded in information entropy, we introduce the Detection-Recognition Synergy (DRS) Score, a composite metric integrating Mutual Information (MI), Jensen-Shannon Divergence (JSD), and Wasserstein Distance (WD) to assess detection’s impact on recognition. We construct a novel benchmark dataset, annotated for both detection and ReID, featuring temporal sequences of the same individuals, diverse backgrounds, and natural settings across both indoor and outdoor environments. Experiments with diverse detection models, including YOLOX, Faster R-CNN, SSD, MTCNN and several others reveal substantial performance shifts due to detection variations. Our findings advocate for integrated evaluation strategies to enhance trustworthiness in face recognition pipelines. By bridging detection and ReID assessments, this study sets a foundation for more robust, explainable, and trusted face recognition pipelines.
-        </p>
-
-        <div class=\"figure\">
-            <img src=\"page_media\figure1.png\" alt=\"Face detection example\">
-            <div class=\"figure-caption\">
-                <strong>Figure 1:</strong> A face was identified and localized from the same image frame by several different detection models. From left: ATSS-r50-fpn, FCOS-MobileNetV2, SSD-MobileNetV2, YOLOX-L, YOLOX-tiny. As shown in the figure, each model positioned its bounding box slightly differently, highlighting variations in detection. These discrepancies can ultimately affect ReID performance, as demonstrated in our experiments. The face is anonymized using attribute-preserving technique due to ethical concerns.
+        
+        <div class="affiliation">
+            A.I. System Research Co. Ltd.<br>
+            Kyoto, 606-8302 Japan<br>
+            {kyleong, han}@aisystemresearch.com
+        </div>
+        
+        <div class="contact">
+            <strong>Corresponding author:</strong> <a href="mailto:kuanyew.leong@gmail.com">kuanyew.leong@gmail.com</a>
+        </div>
+    </header>
+    
+    <main>
+        <section>
+            <h2>Abstract</h2>
+            <div class="abstract">
+                <p>Face recognition systems typically rely on a two-stage pipeline – face detection and re-identification (ReID) – yet existing evaluations often overlook how detection errors propagate to affect recognition accuracy. This work empirically analyzes the interplay between detection and ReID, proposing a holistic framework to quantify synergy and error propagation.</p>
+                
+                <p>Grounded in information entropy, we introduce the Detection-Recognition Synergy (DRS) Score, a composite metric integrating Mutual Information (MI), Jensen-Shannon Divergence (JSD), and Wasserstein Distance (WD) to assess detection's impact on recognition. We construct a novel benchmark dataset, annotated for both detection and ReID, featuring temporal sequences of the same individuals, diverse backgrounds, and natural settings across both indoor and outdoor environments.</p>
+                
+                <p>Experiments with diverse detection models, including YOLOX, Faster R-CNN, SSD, MTCNN and several others reveal substantial performance shifts due to detection variations. Our findings advocate for integrated evaluation strategies to enhance trustworthiness in face recognition pipelines. By bridging detection and ReID assessments, this study sets a foundation for more robust, explainable, and trusted face recognition pipelines.</p>
             </div>
-        </div>
-
-        <div class=\"github-link\">
-            View this project on <a href=\"https://github.com/kuanyewleong/detection-to-reid-benchmark-and-dataset\" target=\"_blank\">GitHub</a>
-        </div>
-    </div>
+        </section>
+        
+        <section class="figure">
+            <img src="/api/placeholder/800/500" alt="Face detection models comparison">
+            <div class="figure-caption">
+                <strong>Figure 1</strong>: A face was identified and localized from the same image frame by several different detection models. From left: ATSS-r50-fpn, FCOS-MobileNetV2, SSD-MobileNetV2, YOLOX-L, YOLOX-tiny. As shown in the figure, each model positioned its bounding box slightly differently, highlighting variations in detection. These discrepancies can ultimately affect ReID performance, as demonstrated in our experiments. The face is anonymized using attribute-preserving technique due to ethical concerns.
+            </div>
+        </section>
+    </main>
+    
+    <footer>
+        <p>© 2025 A.I. System Research Co. Ltd. All rights reserved.</p>
+    </footer>
 </body>
 </html>
