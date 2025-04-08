@@ -4,8 +4,8 @@
 Kuan Yew Leong and Jaeseung Han<br>  
 A.I. System Research Co. Ltd.<br>  
 Kyoto, 606-8302 Japan<br>  
-<a href="mailto:{kyleong, han}@aisystemresearch.com">{kyleong, han}@aisystemresearch.com</a><br>
-**Corresponding author:**[kuanyew.leong@gmail.com](mailto:kuanyew.leong@gmail.com)
+{kyleong, han}@aisystemresearch.com<br>
+**Corresponding author:**<a href="mailto:kuanyew.leong@gmail.com">kuanyew.leong@gmail.com</a>
 </div>
 
 ## Abstract
