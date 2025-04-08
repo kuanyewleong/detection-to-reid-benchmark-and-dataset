@@ -6,146 +6,114 @@
     <title>Bridging Detection and Re-identification Research</title>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;500;700&family=Inter:wght@300;400;600;700&display=swap');
-        
+
         :root {
-            --primary-color: #00b8d4;
-            --secondary-color: #121212;
-            --light-color: #f5f5f7;
-            --dark-color: #1e1e24;
-            --accent-color: #5c6bc0;
-            --highlight-color: #64ffda;
+            --primary-color: #004c6d;
+            --secondary-color: #2c2c2c;
+            --background-color: #ffffff;
+            --text-color: #212121;
+            --subtle-color: #757575;
+            --border-color: #cccccc;
         }
-        
+
         body {
             font-family: 'Inter', sans-serif;
-            line-height: 1.6;
-            color: #e0e0e0;
-            max-width: 1200px;
+            line-height: 1.75;
+            color: var(--text-color);
+            max-width: 900px;
             margin: 0 auto;
-            padding: 20px;
-            background-color: var(--dark-color);
+            padding: 30px;
+            background-color: var(--background-color);
         }
-        
+
         header {
             text-align: center;
-            padding: 2rem 0;
-            background-color: rgba(18, 18, 18, 0.7);
-            border-radius: 8px;
+            padding-bottom: 1.5rem;
+            border-bottom: 1px solid var(--border-color);
             margin-bottom: 2rem;
-            border-bottom: 2px solid var(--primary-color);
-            box-shadow: 0 4px 20px rgba(0, 184, 212, 0.15);
         }
-        
+
         h1 {
             font-family: 'Roboto Mono', monospace;
             font-size: 2rem;
-            margin-bottom: 1rem;
             color: var(--primary-color);
-            letter-spacing: -0.5px;
+            margin-bottom: 0.75rem;
         }
-        
+
         h2 {
             font-family: 'Roboto Mono', monospace;
             font-size: 1.5rem;
-            color: var(--highlight-color);
+            color: var(--secondary-color);
             margin-top: 2rem;
             margin-bottom: 1rem;
             padding-bottom: 0.5rem;
-            border-bottom: 1px solid var(--primary-color);
-            letter-spacing: -0.5px;
+            border-bottom: 1px solid var(--border-color);
         }
-        
+
         .authors {
-            margin: 1.5rem 0;
-            font-size: 1.1rem;
+            font-size: 1rem;
+            color: var(--subtle-color);
         }
-        
+
         .affiliation {
             font-style: italic;
-            margin-bottom: 0.5rem;
-            color: #b0bec5;
+            color: var(--subtle-color);
         }
-        
-        .contact {
-            margin-top: 1rem;
-        }
-        
+
         .abstract {
-            background-color: rgba(18, 18, 18, 0.7);
-            padding: 1.5rem;
-            border-radius: 8px;
+            background-color: #f7f7f7;
+            padding: 1rem;
+            border-left: 4px solid var(--primary-color);
             margin: 2rem 0;
             text-align: justify;
-            border-left: 2px solid var(--accent-color);
-            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+            font-size: 0.95rem;
         }
-        
+
         .figure {
             margin: 2rem 0;
             text-align: center;
         }
-        
+
         .figure img {
             max-width: 100%;
-            border-radius: 8px;
-            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
-            border: 1px solid rgba(0, 184, 212, 0.3);
+            border: 1px solid var(--border-color);
         }
-        
+
         .figure-caption {
             font-family: 'Roboto Mono', monospace;
             font-size: 0.9rem;
-            margin-top: 1rem;
-            padding: 0.8rem 1rem;
-            border-left: 4px solid var(--accent-color);
-            background-color: rgba(18, 18, 18, 0.7);
-            border-radius: 0 8px 8px 0;
-            text-align: left;
+            margin-top: 0.75rem;
+            color: var(--subtle-color);
         }
-        
+
         footer {
             margin-top: 3rem;
             text-align: center;
-            padding: 1rem;
-            background-color: rgba(18, 18, 18, 0.7);
-            border-radius: 8px;
-            font-size: 0.9rem;
-            border-top: 2px solid var(--primary-color);
+            padding-top: 1rem;
+            border-top: 1px solid var(--border-color);
+            font-size: 0.85rem;
+            color: var(--subtle-color);
         }
-        
-        .github-link {
-            margin-top: 2rem;
-            text-align: center;
-            padding: 1.2rem;
-            background-color: rgba(18, 18, 18, 0.8);
-            border-radius: 8px;
-            font-weight: bold;
-            font-family: 'Roboto Mono', monospace;
-            border: 1px solid var(--primary-color);
-            box-shadow: 0 4px 20px rgba(0, 184, 212, 0.15);
-        }
-        
+
         a {
             color: var(--primary-color);
             text-decoration: none;
-            transition: color 0.3s ease;
             border-bottom: 1px dotted var(--primary-color);
-            padding-bottom: 2px;
+            transition: color 0.2s ease;
         }
-        
+
         a:hover {
-            color: var(--highlight-color);
-            border-bottom: 1px solid var(--highlight-color);
-            text-decoration: none;
+            color: var(--secondary-color);
+            border-bottom: 1px solid var(--secondary-color);
         }
-        
+
         @media (max-width: 768px) {
             h1 {
-                font-size: 1.7rem;
+                font-size: 1.75rem;
             }
-            
+
             body {
-                padding: 15px;
+                padding: 20px;
             }
         }
     </style>
