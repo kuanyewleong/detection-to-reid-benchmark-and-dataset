@@ -1,4 +1,11 @@
-# Bridging Detection and Re-identification: Evaluating Trustworthiness and Error Propagation in Face Recognition Pipelines
+## Bridging Detection and Re-identification: Evaluating Trustworthiness and Error Propagation in Face Recognition Pipelines
+
+<div align="center">
+Kuan Yew Leong and Jaeseung Han  
+A.I. System Research Co. Ltd.  
+Kyoto, 606-8302 Japan  
+{kyleong, han}@aisystemresearch.com
+</div>
 
 ## Abstract
 Face recognition systems typically rely on a two-stage pipeline – face detection and re-identification (ReID) – yet existing evaluations often overlook how detection errors propagate to affect recognition accuracy. This work empirically analyzes the interplay between detection and ReID, proposing a holistic framework to quantify synergy and error propagation. Grounded in information entropy, we introduce the Detection-Recognition Synergy (DRS) Score, a composite metric integrating Mutual Information (MI), Jensen-Shannon Divergence (JSD), and Wasserstein Distance (WD) to assess detection’s impact on recognition. We construct a novel benchmark dataset, annotated for both detection and ReID, featuring temporal sequences of the same individuals, diverse backgrounds, and natural settings across both indoor and outdoor environments. Experiments with diverse detection models, including YOLOX, Faster R-CNN, SSD, MTCNN and several others reveal substantial performance shifts due to detection variations. Our findings advocate for integrated evaluation strategies to enhance trustworthiness in face recognition pipelines. By bridging detection and ReID assessments, this study sets a foundation for more robust, explainable, and trusted face recognition pipelines.
