@@ -3,7 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bridging Detection and Re-identification Research</title>
+    <title>Bridging Detection and Re-identification Research</title>        
+    <!-- 🌐 Open Graph Metadata for Social Sharing -->
+    <meta property="og:title" content="Bridging Detection and Re-identification">
+    <meta property="og:description" content="Face recognition systems typically rely on a two-stage pipeline – face detection and re-identification (ReID) – yet existing evaluations often overlook how detection errors propagate to affect recognition accuracy. This work empirically analyzes the interplay between detection and ReID, proposing a holistic framework to quantify synergy and error propagation.">
+    <meta property="og:image" content="https://raw.githubusercontent.com/kuanyewleong/detection-to-reid-benchmark-and-dataset/refs/heads/main/page_media/figure1.png">
+    <meta property="og:url" content="https://kuanyewleong.github.io/detection-to-reid-benchmark-and-dataset/">
+    <meta property="og:type" content="website">
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;500;700&family=Inter:wght@300;400;600;700&display=swap');
 
@@ -152,7 +158,7 @@
         </section>
         
         <section class="figure">
-            <img src="https://github.com/kuanyewleong/detection-to-reid-benchmark-and-dataset/blob/main/page_media/figure1.png?raw=true" alt="Face detection models comparison">
+            <img src="https://raw.githubusercontent.com/kuanyewleong/detection-to-reid-benchmark-and-dataset/refs/heads/main/page_media/figure1.png" alt="Face detection models comparison">
             <div class="figure-caption">
                 <strong>Figure 1</strong>: A face was identified and localized from the same image frame by several different detection models. From left: ATSS-r50-fpn, FCOS-MobileNetV2, SSD-MobileNetV2, YOLOX-L, YOLOX-tiny. As shown in the figure, each model positioned its bounding box slightly differently, highlighting variations in detection. These discrepancies can ultimately affect ReID performance, as demonstrated in our experiments. The face is anonymized using attribute-preserving technique due to ethical concerns.
             </div>
