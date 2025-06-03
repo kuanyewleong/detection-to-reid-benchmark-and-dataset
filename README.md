@@ -32,6 +32,3 @@ Attribute-Preserving Anonymization: Utilizing latent code optimization, we alter
 
 Compliance with Ethical Standards: Our anonymization approach aligns with established privacy protection methods, including de-identification and pseudonymization, to mitigate the risk of re-identification.
 
-
-## Technical Documentation of Dataset
-
